@@ -38,5 +38,6 @@ grafo = {
     'C': {'A': 4, 'B': 2, 'D': 1},
     'D': {'B': 5, 'C': 1}
 }
+
 mst = kruskal(grafo)
 print("Árbol de expansión mínima (MST):", mst)

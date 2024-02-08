@@ -25,4 +25,5 @@ grafo = {
 }
 inicio = 'A'  # Nodo de inicio para la búsqueda en amplitud
 nodos_alcanzables = bfs(grafo, inicio)  # Llama a la función bfs para encontrar los nodos alcanzables desde el nodo de inicio
+
 print("Nodos alcanzables desde", inicio + ":", nodos_alcanzables)  # Se imprime los nodos alcanzables

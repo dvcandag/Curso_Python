@@ -1,4 +1,4 @@
-# Ejercicio 18: ingresar su nombre y su edad. Luego, sepa usted si ya es mayor o menor de edad.
+# Ejercicio 19: ingresar su nombre y su edad. Luego, sepa usted si ya es mayor o menor de edad.
 
 
 nombre = input("Ingrese su nombre: ")

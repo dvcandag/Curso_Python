@@ -1,6 +1,6 @@
-"""Escribir un programa que pregunte al usuario por las ventas de un rango de años y muestre 
-por pantalla un diagrama de líneas con la evolución de las ventas."""
-
+"""Ejercicio 49: Desarrollar un programa que solicite al usuario ingresar datos de ventas 
+durante varios años, luego, el programa mostrará un gráfico de líneas 
+que ilustra la evolución de estas ventas a lo largo del tiempo."""
 
 import matplotlib.pyplot as plt
 

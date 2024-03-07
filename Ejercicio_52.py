@@ -13,6 +13,7 @@ El programa debe realizar las siguientes acciones:
 4.- Anuncio de ganadores:
     a.- Se debe anunciar si alguno de los jugadores ha ganado la apuesta o si ninguno ha acertado el número ganador."""
     
+    
 import random
 
 class JugadorTeApuesto:

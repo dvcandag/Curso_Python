@@ -11,3 +11,23 @@
     Un nuevo diccionario con las asignaturas en mayúsculas y las calificaciones correspondientes a las notas aprobadas iguales o mayores a 12.
     """
 
+#SOLUCION
+
+def notas_aprobadas(notas):
+    notas_aprobadas = {}
+    for asignatura, nota in notas.items():
+        if nota >= 12:  # Consideramos aprobadas las notas iguales o mayores a 12
+            notas_aprobadas[asignatura.upper()] = nota
+    return notas_aprobadas
+
+# Ejecución de desarrollo:
+notas_alumno = {
+    'Matemáticas': 7,
+    'Ciencias': 10,
+    'Historia': 14,
+    'Literatura': 13,
+    'Inglés': 8
+}
+
+notas_aprobadas = notas_aprobadas(notas_alumno)
+print(notas_aprobadas)

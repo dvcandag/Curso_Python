@@ -14,3 +14,28 @@ Instrucciones:
 4.- Además, indica qué cliente ha realizado más depósitos.
 
 """
+#SOLUCION:
+depositos = {}
+while True:
+    nro = int(input('Ingrese nro de cliente (0 para finalizar): '))
+    if nro == 0:
+        break
+    monto = int(input('Ingrese monto a depositar: '))
+    
+    if nro in depositos:
+        depositos[nro]['cantidad'] += 1  # Incrementar el contador de depósitos para el cliente
+        depositos[nro]['monto_total'] += monto  # Sumar el monto depositado
+    else:
+        depositos[nro] = {'cantidad': 1, 'monto_total': monto}  # Iniciar el contador de depósitos y el monto total para el cliente
+
+cantidad_depositos = sum(cliente['cantidad'] for cliente in depositos.values())
+suma_total = sum(cliente['monto_total'] for cliente in depositos.values())
+
+print('Cantidad de depósitos:', cantidad_depositos)
+print('Total depositado por todos los clientes:', suma_total)
+
+# Encontrar al cliente que ha depositado más veces
+cliente_mas_depositos = max(depositos, key=lambda x: depositos[x]['cantidad'])
+print('Cliente que ha depositado más veces:', cliente_mas_depositos, 'con', depositos[cliente_mas_depositos]['cantidad'], 'depósitos.')
+
+

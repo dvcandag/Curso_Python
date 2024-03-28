@@ -15,7 +15,7 @@ Proporcionar comentarios explicativos. Tu solución debe entregarse en un archiv
 ejecutandose satisfactoriamente en el terminal de su entorno de desarrollo.
 """
 
-#SOLUSION
+#SOLUCION
 
 # Definición de la función 'password' para generar una contraseña modificada
 def password(string):

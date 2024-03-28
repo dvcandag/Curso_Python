@@ -10,7 +10,7 @@ ejecutandose satisfactoriamente en el terminal de su entorno de desarrollo.
 """
 
 
-# SOLUSION
+# SOLUCION
 
 # Definición de la cantidad de dinero que tiene Vitto
 vitto = 47  # Cantidad de dinero que tiene Vitto (cambia este valor según sea necesario)

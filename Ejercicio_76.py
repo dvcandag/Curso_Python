@@ -37,7 +37,7 @@ def solicitar_año_actual():
             # Maneja la excepción en caso de que el usuario ingrese un valor no numérico
             print("Por favor, ingresa un año válido.")
             
- def registrar_persona(numero_persona):
+def registrar_persona(numero_persona):
     # Función para registrar los datos de una persona
     nombre = input(f"Ingrese el nombre de la persona {numero_persona}: ")
     while True:
@@ -54,9 +54,10 @@ def solicitar_año_actual():
             # Maneja la excepción en caso de que el usuario ingrese un valor no numérico
             print("Por favor, ingresa un año válido.")
             
-            def calcular_edad(año_nacimiento, año_actual):
+def calcular_edad(año_nacimiento, año_actual):
     # Calcula la edad restando el año de nacimiento del año actual
     return año_actual - año_nacimiento
+
 def presentar_resultados(registros):
     # Función para presentar los resultados
     print("\nResultados:")
@@ -66,7 +67,7 @@ def presentar_resultados(registros):
 
 def main():
     # Función principal
-    año_actual = solicitar_anno_actual()
+    año_actual = solicitar_año_actual()
     registros = []
     for i in range(1, 4):
         print(f"\nPersona {i}:")
@@ -75,3 +76,7 @@ def main():
         # Almacena los datos de la persona y su edad en una lista de registros
         registros.append((nombre, año_nacimiento, año_actual, edad))
     presentar_resultados(registros)
+    
+if __name__ == "__main__":
+    main()
+    

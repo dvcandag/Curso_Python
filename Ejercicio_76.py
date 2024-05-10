@@ -37,4 +37,19 @@ def solicitar_año_actual():
             # Maneja la excepción en caso de que el usuario ingrese un valor no numérico
             print("Por favor, ingresa un año válido.")
             
- 
+ def registrar_persona(numero_persona):
+    # Función para registrar los datos de una persona
+    nombre = input(f"Ingrese el nombre de la persona {numero_persona}: ")
+    while True:
+        try:
+            # Solicita al usuario que ingrese el año de nacimiento de la persona
+            año_nacimiento = int(input(f"Ingrese el año de nacimiento de {nombre}: "))
+            año_actual = solicitar_año_actual()
+            # Verifica si el año de nacimiento es válido (menor o igual al año actual)
+            if año_nacimiento > año_actual:
+                print("El año de nacimiento no puede ser mayor que el año actual.")
+            else:
+                return nombre, año_nacimiento, año_actual
+        except ValueError:
+            # Maneja la excepción en caso de que el usuario ingrese un valor no numérico
+            print("Por favor, ingresa un año válido.")

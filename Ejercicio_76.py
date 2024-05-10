@@ -57,3 +57,10 @@ def solicitar_año_actual():
             def calcular_edad(año_nacimiento, año_actual):
     # Calcula la edad restando el año de nacimiento del año actual
     return año_actual - año_nacimiento
+def presentar_resultados(registros):
+    # Función para presentar los resultados
+    print("\nResultados:")
+    for nombre, año_nacimiento, año_actual, edad in registros:
+        # Imprime el nombre de la persona y la edad que cumplirá durante el año actual
+        print(f"{nombre} cumplirá {edad} años durante el año {año_actual}.")
+

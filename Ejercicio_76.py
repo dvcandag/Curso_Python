@@ -20,3 +20,19 @@ Instrucciones Adicionales:
     incluir situaciones como años negativos, nombres con caracteres especiales, etc.
     
 """
+
+# SOLUCIÓN
+
+def solicitar_anno_actual():
+    while True:
+        try:
+            # Solicita al usuario que ingrese el año actual
+            anno_actual = int(input("Por favor, ingresa el año actual: "))
+            # Verifica si el año ingresado es válido (positivo)
+            if anno_actual > 0:
+                return anno_actual
+            else:
+                print("Por favor, ingresa un año válido.")
+        except ValueError:
+            # Maneja la excepción en caso de que el usuario ingrese un valor no numérico
+            print("Por favor, ingresa un año válido.")

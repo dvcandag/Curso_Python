@@ -64,3 +64,14 @@ def presentar_resultados(registros):
         # Imprime el nombre de la persona y la edad que cumplirá durante el año actual
         print(f"{nombre} cumplirá {edad} años durante el año {año_actual}.")
 
+def main():
+    # Función principal
+    año_actual = solicitar_anno_actual()
+    registros = []
+    for i in range(1, 4):
+        print(f"\nPersona {i}:")
+        nombre, año_nacimiento, año_actual = registrar_persona(i)
+        edad = calcular_edad(año_nacimiento, año_actual)
+        # Almacena los datos de la persona y su edad en una lista de registros
+        registros.append((nombre, año_nacimiento, año_actual, edad))
+    presentar_resultados(registros)

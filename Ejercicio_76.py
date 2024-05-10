@@ -53,3 +53,7 @@ def solicitar_año_actual():
         except ValueError:
             # Maneja la excepción en caso de que el usuario ingrese un valor no numérico
             print("Por favor, ingresa un año válido.")
+            
+            def calcular_edad(año_nacimiento, año_actual):
+    # Calcula la edad restando el año de nacimiento del año actual
+    return año_actual - año_nacimiento

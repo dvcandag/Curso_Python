@@ -56,3 +56,12 @@ def analizar_edades(edades):
     edad_maxima = max(edades)
     promedio_edades = sum(edades) / len(edades)
     return edad_minima, edad_maxima, promedio_edades
+
+def presentar_resultados(edad_minima, edad_maxima, promedio_edades):
+    """
+    Imprime en pantalla la edad mínima, la edad máxima y el promedio de las edades registradas.
+    """
+    print("\nResultados del registro de edades:")
+    print(f"Edad mínima registrada: {edad_minima}")
+    print(f"Edad máxima registrada: {edad_maxima}")
+    print(f"Promedio de edades registradas: {promedio_edades}")

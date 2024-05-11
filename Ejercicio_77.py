@@ -75,3 +75,7 @@ def programa_registro_edades():
     edades = ingresar_edades(num_personas)
     edad_minima, edad_maxima, promedio_edades = analizar_edades(edades)
     presentar_resultados(edad_minima, edad_maxima, promedio_edades)
+
+# Llamar a la función principal
+if __name__ == "__main__":
+    programa_registro_edades()

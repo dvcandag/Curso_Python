@@ -11,3 +11,19 @@ Escribe un programa en Python que realice las siguientes tareas:
     de las edades registradas.
     
 """
+
+#SOLUCIÓN
+
+def ingresar_numero_personas():
+    """
+    Solicita al usuario ingresar el número de personas cuyas edades se registrarán.
+    """
+    while True:
+        try:
+            num_personas = int(input("Ingrese el número de personas: "))
+            if num_personas <= 0:
+                print("Por favor, ingrese un número entero positivo.")
+            else:
+                return num_personas
+        except ValueError:
+            print("Entrada inválida. Por favor, ingrese un número entero.")

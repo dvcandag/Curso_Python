@@ -27,3 +27,21 @@ def ingresar_numero_personas():
                 return num_personas
         except ValueError:
             print("Entrada inválida. Por favor, ingrese un número entero.")
+            
+def ingresar_edades(num_personas):
+    """
+    Solicita al usuario que ingrese las edades de las personas una por una.
+    """
+    edades = []
+    for i in range(num_personas):
+        while True:
+            try:
+                edad = int(input(f"Ingrese la edad de la persona {i+1}: "))
+                if edad < 0:
+                    print("Por favor, ingrese una edad válida (mayor o igual a cero).")
+                else:
+                    edades.append(edad)
+                    break
+            except ValueError:
+                print("Entrada inválida. Por favor, ingrese un número entero.")
+    return edades

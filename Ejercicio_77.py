@@ -45,3 +45,14 @@ def ingresar_edades(num_personas):
             except ValueError:
                 print("Entrada inválida. Por favor, ingrese un número entero.")
     return edades
+
+def analizar_edades(edades):
+    """
+    Determinamos la edad mínima, la edad máxima y el promedio de las edades registradas.
+    """
+    if len(edades) == 0:
+        return None, None, None
+    edad_minima = min(edades)
+    edad_maxima = max(edades)
+    promedio_edades = sum(edades) / len(edades)
+    return edad_minima, edad_maxima, promedio_edades

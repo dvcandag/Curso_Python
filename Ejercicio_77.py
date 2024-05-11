@@ -65,3 +65,13 @@ def presentar_resultados(edad_minima, edad_maxima, promedio_edades):
     print(f"Edad mínima registrada: {edad_minima}")
     print(f"Edad máxima registrada: {edad_maxima}")
     print(f"Promedio de edades registradas: {promedio_edades}")
+    
+def programa_registro_edades():
+    """
+    Codificación de la función principal del programa.
+    """
+    print("Bienvenido al programa de registro de edades.")
+    num_personas = ingresar_numero_personas()
+    edades = ingresar_edades(num_personas)
+    edad_minima, edad_maxima, promedio_edades = analizar_edades(edades)
+    presentar_resultados(edad_minima, edad_maxima, promedio_edades)

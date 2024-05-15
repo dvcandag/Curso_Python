@@ -79,3 +79,5 @@ def programa_registro_edades():
 # Llamar a la función principal
 if __name__ == "__main__":
     programa_registro_edades()
+
+# Codificación terminado

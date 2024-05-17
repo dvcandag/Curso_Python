@@ -15,3 +15,16 @@ def es_año_olímpico(año):
     else:
         return False
 
+def main():
+    try:
+        # Solicitamos al usuario que ingrese un año
+        año = int(input("Ingrese un año para verificar si es un año olímpico: "))
+
+        # Verificamos si el año ingresado es un año olímpico o no
+        if es_año_olímpico(año):
+            print(f"{año} es un año olímpico.")
+        else:
+            print(f"{año} no es un año olímpico.")
+    except ValueError:
+        print("Error: Ingrese un año válido.")
+

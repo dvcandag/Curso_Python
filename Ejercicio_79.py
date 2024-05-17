@@ -28,3 +28,6 @@ def main():
     except ValueError:
         print("Error: Ingrese un año válido.")
 
+# Verificamos si este archivo es el punto de entrada principal del programa
+if __name__ == "__main__":
+    main()
